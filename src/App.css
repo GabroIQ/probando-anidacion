@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+li{
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.5s;
+  letter-spacing: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover{
+  text-decoration:underline;
+  letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fondo{
+  background-image: url(https://jmtorrero.com/wp-content/uploads/2021/08/Imagenes-Diseno-JmTorrero.png);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 8px 3rem;
+  align-items: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.header__nav{
+  display: flex;
+  gap: 3rem;
+}
+
+
+.contenedor{
+  background-color: rgba(0, 0, 0, .8);
+  width: 30rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
+  color: white; 
 }
 
-.App-link {
-  color: #61dafb;
+.contenedor__prodcutos{
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.producto__fondo{
+  background-color: red;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.producto__fondo:hover{
+  width: 60px;
+  height: 60px;
+}
+
+.opcion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  background-color: blue;
+  
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textarea{
+  height: 100px;
+}
+
+
+.btn{
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
 }
